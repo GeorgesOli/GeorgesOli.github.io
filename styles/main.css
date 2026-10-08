@@ -1443,6 +1443,7 @@ a:hover {
   font-weight: 700;
   font-family: var(--font-secondary);
   margin: 60px;
+  color: var(--color-primary);
 }
 .hub .texte {
   max-width: 800px;
@@ -1608,6 +1609,9 @@ a:hover {
 .video .wrapper .video__media {
   width: 100%;
   height: 100%;
+  aspect-ratio: 16/9;
+  cursor: pointer;
+  position: relative;
 }
 .video .wrapper .video__media img {
   width: 100%;
@@ -1618,10 +1622,26 @@ a:hover {
   border-radius: 15px;
   border: solid 2px var(--color-white);
 }
+.video .wrapper .video__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
 .video .wrapper .video__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.video .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  color: var(--color-white);
+  z-index: 999;
 }
 
 /*
@@ -1642,27 +1662,14 @@ a:hover {
 .competences p {
   margin: 5px;
 }
-.competences hr {
-  border: none;
-  height: 2px;
-  background-color: var(--color-primary);
-  position: relative;
-  margin: 50px 0;
-}
-.competences hr::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 15px;
-  height: 15px;
-  background-color: var(--color-primary);
-  border-radius: 100%;
+.competences .svg_line {
+  width: 100%;
+  max-width: 60%;
+  margin: 80px 0;
 }
 
-/*
-   Photos de ma vie hors travail
+/* ==========================================================================
+    / Photos
    ========================================================================== */
 .photos {
   margin-bottom: 100px;
@@ -1670,48 +1677,34 @@ a:hover {
 .photos h2 {
   margin: 50px 0;
 }
-.photos .wrapper {
-  overflow: visible;
+
+.circular-gallery {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  cursor: grab;
+  touch-action: pan-y;
 }
-.photos .container_swiper {
-  height: 630px;
+.circular-gallery:active {
+  cursor: grabbing;
 }
-.photos article {
-  width: 280px;
-  height: 100%;
+.circular-gallery:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
 }
-.photos article img {
+.circular-gallery .circular-gallery__canvas {
+  display: block;
   width: 100%;
   height: 100%;
-  max-height: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 15px;
-  border: 2px solid var(--color-white);
 }
-.photos article p {
-  margin: 0;
-}
-.photos .bas {
-  display: flex;
-  flex-direction: column-reverse;
-}
-.photos .swiper {
-  padding-bottom: 50px;
-}
-.photos .swiper-scrollbar {
-  --swiper-scrollbar-bottom: 0;
-  left: 35%;
-  width: 30%;
-  height: 10px;
-  box-sizing: border-box;
-  border: 2px solid var(--color-white);
-  --swiper-scrollbar-border-radius: 15px;
-  --swiper-scrollbar-drag-bg-color: transparent;
-}
-.photos .swiper-scrollbar-drag {
-  --swiper-scrollbar-drag-bg-color: var(--color-primary);
-  --swiper-scrollbar-border-radius: 15px;
+.circular-gallery .circular-gallery__items {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 .js-panel {
@@ -1721,20 +1714,49 @@ a:hover {
 .raindrop {
   height: 100vh;
   position: relative;
+  overflow: hidden;
   background: linear-gradient(0deg, var(--color-bg-primary), var(--color-black));
 }
+.raindrop .wrapper {
+  position: relative;
+  z-index: 2;
+}
 .raindrop .droplet {
+  --flare: 0;
+  --drop-alpha: calc(0.3 + var(--flare) * 0.7);
   position: absolute;
   top: -10%;
   clip-path: polygon(50% 0, 100% 100%, 0 100%);
   border-radius: 100px;
-  background: linear-gradient(0deg, rgba(230, 178, 75, 0.3) 50%, rgba(0, 0, 255, 0) 100% 100%);
+  background: linear-gradient(0deg, rgba(230, 178, 75, var(--drop-alpha)) 50%, rgba(0, 0, 255, 0) 100%);
+  filter: brightness(calc(1 + var(--flare) * 1.5));
 }
 .raindrop .dot {
   position: absolute;
   background: var(--color-white);
   border-radius: 50%;
   pointer-events: none;
+}
+.raindrop .raindrop__halo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: var(--halo-size);
+  height: var(--halo-size);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(230, 178, 75, 0.25) 0%, rgba(230, 178, 75, 0) 70%);
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+.raindrop .raindrop__trail {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  mix-blend-mode: screen;
 }
 
 .projets {
@@ -1777,6 +1799,9 @@ a:hover {
    ========================================================================== */
 .fiche_projets {
   margin: 0;
+}
+.fiche_projets article:not(.final) img {
+  max-height: 300px;
 }
 .fiche_projets h2 {
   margin-bottom: 100px;
@@ -1836,7 +1861,7 @@ a:hover {
 }
 
 .fiche_projets .svg_line {
-  width: 75%;
+  width: 77%;
   height: 100%;
   position: absolute;
   top: -10%;

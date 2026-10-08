@@ -66,7 +66,7 @@
                                 <nav class="nav">
                                     <ul>
                                         <li>
-                                            <a href="#">
+                                            <a href="Olivier_Georges_CV_3_0.pdf" download="Olivier_Georges_CV_3_0.pdf">
                                                 <svg class="icon icon--md">
                                                     <use href="#icon-cv"></use>
                                                 </svg>
@@ -132,7 +132,7 @@
                                 <p>
                                     Je suis un
                                     <strong>finissant</strong>
-                                    de la technique d’
+                                    de la techniques d’
                                     <strong>intégration multimédia</strong>
                                     . J’adore apprendre de nouvelles compétences et collaborer avec mes collègues. Quand je ne travaille pas, j’aime être
                                     tranquille en faisant du
@@ -168,7 +168,7 @@
                 </section>
             </div>
 
-            <section class="video" id="video">
+            <section class="video" id="video" data-component="Youtube" data-video-id="W1Jbz3exIOw">
                 <div class="wrapper">
                     <div class="video__content">
                         <h2>
@@ -178,13 +178,16 @@
                         </h2>
                         <p>Vous êtes curieux d’en savoir un tout petit peu plus sur moi? Je vous invite à regarder ma présentation vidéo!</p>
                     </div>
-                    <div class="video__media">
-                        <img src="assets/images/gta.jpg" alt="" />
+                    <div class="video__media js-video">
+                        <img class="js-poster" src="assets/images/cover_youtube_olivier_georges.png" alt="Vidéo de moi" />
+                        <svg class="icon icon--xl">
+                            <use href="#icon-play"></use>
+                        </svg>
                     </div>
                 </div>
             </section>
 
-            <section class="competences section--horiz js-horiz">
+            <section class="competences section--horiz js-horiz" data-component="Lines" data-offset="0">
                 <div class="wrapper">
                     <h2>Mes compétences</h2>
                     <div class="container_competences">
@@ -204,7 +207,6 @@
                                     <p>Animation 3D</p>
                                 </li>
                             </ul>
-                            <hr />
                         </div>
                         <div class="soft js-panel">
                             <h3 class="">Softs Skills</h3>
@@ -222,7 +224,6 @@
                                     <p>Patient</p>
                                 </li>
                             </ul>
-                            <hr />
                         </div>
                         <div class="logiciel js-panel">
                             <h3 class="">Logiciels</h3>
@@ -240,8 +241,12 @@
                                     <p>Adobe Creative Cloud</p>
                                 </li>
                             </ul>
-                            <hr />
                         </div>
+                    </div>
+                    <div class="svg_line">
+                        <svg class="icon" viewBox="0 0 1205 16" fill="none" preserveAspectRatio="xMidYMax meet">
+                            <path class="path-ligne" d="M0 8C0 12.4183 3.58172 16 8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8ZM413 8C413 12.4183 416.582 16 421 16C425.418 16 429 12.4183 429 8C429 3.58172 425.418 0 421 0C416.582 0 413 3.58172 413 8ZM821 8C821 12.4183 824.582 16 829 16C833.418 16 837 12.4183 837 8C837 3.58172 833.418 0 829 0C824.582 0 821 3.58172 821 8ZM8 8V9.5H413V8V6.5H8V8ZM421 8V9.5H821V8V6.5H421V8ZM829 8V9.5H1205V8V6.5H829V8Z" fill="#E6B24B" />
+                        </svg>
                     </div>
                 </div>
             </section>
@@ -249,35 +254,66 @@
             <section class="photos">
                 <div class="wrapper">
                     <h2>Voici des morceaux de ma vie</h2>
+                </div>
 
-                    <div class="swiper" data-view="3.5" data-component="Carousel">
-                        <div class="swiper-wrapper container_swiper">
-                            <article class="swiper-slide">
-                                <img src="assets/images/hereford.jpg" alt="Sommet du mont HereFord" />
-                                <p>Montée au sommet de HereFord</p>
-                            </article>
-                            <article class="swiper-slide bas">
-                                <img src="assets/images/camping.jpg" alt="Image de moi en camping" />
-                                <p>BushCraft & Camping</p>
-                            </article>
-                            <article class="swiper-slide">
-                                <img src="assets/images/gta.jpg" alt="Image de GTA V modder" />
-                                <p>Jeu vidéo - GTA V</p>
-                            </article>
-                            <article class="swiper-slide bas">
-                                <img src="assets/images/car.jpg" alt="Image d'un BMW M3" />
-                                <p>Car spotting en campagne</p>
-                            </article>
-
-                            <article class="swiper-slide">
-                                <img src="assets/images/rando.jpg" alt="Image de mes amis en randonée" />
-                                <p>Excursion hivernale en montagne</p>
-                            </article>
-                        </div>
-                        <div class="swiper-scrollbar"></div>
+                <div class="circular-gallery" data-component="CircularGallery" data-bend="3" data-border-radius="0.05" tabindex="0" role="region" aria-label="Galerie de photos. Glissez ou utilisez les flèches gauche et droite.">
+                    <div class="circular-gallery__items">
+                        <article>
+                            <img src="assets/images/hereford.jpg" alt="Sommet du mont HereFord" />
+                            <p>Montée au sommet de HereFord</p>
+                        </article>
+                        <article>
+                            <img src="assets/images/camping.jpg" alt="Image de moi en camping" />
+                            <p>BushCraft & Camping</p>
+                        </article>
+                        <article>
+                            <img src="assets/images/gta.jpg" alt="Image de GTA V modder" />
+                            <p>Jeu vidéo - GTA V</p>
+                        </article>
+                        <article>
+                            <img src="assets/images/car.jpg" alt="Image d'un BMW M3" />
+                            <p>Car spotting en campagne</p>
+                        </article>
+                        <article>
+                            <img src="assets/images/rando.jpg" alt="Image de mes amis en randonée" />
+                            <p>Excursion hivernale en montagne</p>
+                        </article>
                     </div>
                 </div>
             </section>
+
+            <!-- <section class="photos">
+                    <div class="wrapper">
+                        <h2>Voici des morceaux de ma vie</h2>
+
+                        <div class="swiper" data-view="3.5" data-component="Carousel">
+                            <div class="swiper-wrapper container_swiper">
+                                <article class="swiper-slide">
+                                    <img src="assets/images/hereford.jpg" alt="Sommet du mont HereFord" />
+                                    <p>Montée au sommet de HereFord</p>
+                                </article>
+                                <article class="swiper-slide bas">
+                                    <img src="assets/images/camping.jpg" alt="Image de moi en camping" />
+                                    <p>BushCraft & Camping</p>
+                                </article>
+                                <article class="swiper-slide">
+                                    <img src="assets/images/gta.jpg" alt="Image de GTA V modder" />
+                                    <p>Jeu vidéo - GTA V</p>
+                                </article>
+                                <article class="swiper-slide bas">
+                                    <img src="assets/images/car.jpg" alt="Image d'un BMW M3" />
+                                    <p>Car spotting en campagne</p>
+                                </article>
+
+                                <article class="swiper-slide">
+                                    <img src="assets/images/rando.jpg" alt="Image de mes amis en randonée" />
+                                    <p>Excursion hivernale en montagne</p>
+                                </article>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </section> -->
 
             <section class="projets" id="projets">
                 <div class="wrapper">
@@ -318,7 +354,7 @@
                                     <strong>design UI/UX , intégration Web HTML, CSS et Javascript</strong>
                                     fait pour redonner un nouveau style au site de la ville.
                                 </p>
-                                <a href="bsc.html" class="button">
+                                <a href="boxotel.html" class="button">
                                     <p>Voir le projet</p>
                                     <svg class="icon icon--md">
                                         <use href="#icon-fleche"></use>
@@ -337,7 +373,7 @@
                                     <strong>création 3D</strong>
                                     avec but de créer un tunnel infini rempli de projet étudiant à la chaine.
                                 </p>
-                                <a href="infinite-road.html" class="button">
+                                <a href="boxotel.html" class="button">
                                     <p>Voir le projet</p>
                                     <svg class="icon icon--md">
                                         <use href="#icon-fleche"></use>
@@ -358,7 +394,7 @@
                                     <strong>Blender</strong>
                                     . Je devais modéliser et animer un robot.
                                 </p>
-                                <a href="robot.html" class="button">
+                                <a href="boxotel.html" class="button">
                                     <p>Voir le projet</p>
                                     <svg class="icon icon--md">
                                         <use href="#icon-fleche"></use>
@@ -379,7 +415,7 @@
                                     <strong>HMTL, CSS et Javascrip</strong>
                                     t. Je devais réussir à intégrer le site finisalisé dans Wordpress.
                                 </p>
-                                <a href="recette.html" class="button">
+                                <a href="boxotel.html" class="button">
                                     <p>Voir le projet</p>
                                     <svg class="icon icon--md">
                                         <use href="#icon-fleche"></use>
@@ -391,7 +427,7 @@
                 </div>
             </section>
 
-            <footer class="footer">
+            <footer class="footer" id="contacter">
                 <div class="wrapper">
                     <h3>Vous cherchez un stagiaire en développement Web, vous l’avez peut-être trouver ! Contacter moi si vous êtes intéressé.</h3>
                     <nav>
@@ -432,19 +468,14 @@
                     </nav>
                     <div class="section_bas">
                         <p>Téléphone : 514-863-8685</p>
-                        <img src="../assets/images/logo.png" alt="Image du logo">
+                        <img src="../assets/images/logo.png" alt="Image du logo" />
                         <p>Courriel : ogeorges29@hotmail.com</p>
                     </div>
                     <p class="credit">© 2026 Olivier Georges — Portfolio personnel. Tous droits réservés.</p>
                 </div>
             </footer>
-
-</body>
-
-</html>
-
-</div>
-</div>
+        </div>
+    </div>
 </body>
 
 </html>
