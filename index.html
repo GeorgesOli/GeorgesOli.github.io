@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HUB</title>
 
+    <link rel="icon" type="image/png" href="assets/images/logo.png" />
+
     <link rel="stylesheet" href="styles/main.css" />
 
     <!-- <script src="scripts/vendors.js" defer></script> -->
@@ -13,6 +15,7 @@
 </head>
 
 <body>
+    <div class="cursor" data-component="Cursor"></div>
     <div id="smooth-wrapper" data-component="Scroll" data-pin-items="true">
         <div id="smooth-content">
             <div class="slides-wrapper">
@@ -58,8 +61,8 @@
                                     <p class="titre">Olivier Georges</p>
                                     <p class="titre_petit"><em>Développeur Web - Modélisateur 3D</em></p>
                                     <p class="texte">
-                                        Salut ! Je prête main forte à l’équipe avec mes compétences Webs comme l’HTML, CSS, JavaScript, mes connaissances en
-                                        3D et ma motivation à contribuer.
+                                        Salut ! Je prête main forte à l’équipe avec mes compétences Webs comme l’HTML, CSS, JavaScript, mes
+                                        connaissances en 3D et ma motivation à contribuer.
                                     </p>
                                 </div>
 
@@ -134,8 +137,8 @@
                                     <strong>finissant</strong>
                                     de la techniques d’
                                     <strong>intégration multimédia</strong>
-                                    . J’adore apprendre de nouvelles compétences et collaborer avec mes collègues. Quand je ne travaille pas, j’aime être
-                                    tranquille en faisant du
+                                    . J’adore apprendre de nouvelles compétences et collaborer avec mes collègues. Quand je ne travaille pas, j’aime
+                                    être tranquille en faisant du
                                     <strong>bushcraft</strong>
                                     , jouer au
                                     <strong>jeux-vidéo</strong>
@@ -178,7 +181,7 @@
                         </h2>
                         <p>Vous êtes curieux d’en savoir un tout petit peu plus sur moi? Je vous invite à regarder ma présentation vidéo!</p>
                     </div>
-                    <div class="video__media js-video">
+                    <div class="video__media js-video" data-cursor="play">
                         <img class="js-poster" src="assets/images/cover_youtube_olivier_georges.png" alt="Vidéo de moi" />
                         <svg class="icon icon--xl">
                             <use href="#icon-play"></use>
@@ -256,7 +259,7 @@
                     <h2>Voici des morceaux de ma vie</h2>
                 </div>
 
-                <div class="circular-gallery" data-component="CircularGallery" data-bend="3" data-border-radius="0.05" tabindex="0" role="region" aria-label="Galerie de photos. Glissez ou utilisez les flèches gauche et droite.">
+                <div class="circular-gallery" data-cursor="drag" data-component="CircularGallery" data-bend="3" data-border-radius="0.05" tabindex="0" role="region" aria-label="Galerie de photos. Glissez ou utilisez les flèches gauche et droite.">
                     <div class="circular-gallery__items">
                         <article>
                             <img src="assets/images/hereford.jpg" alt="Sommet du mont HereFord" />
@@ -282,39 +285,6 @@
                 </div>
             </section>
 
-            <!-- <section class="photos">
-                    <div class="wrapper">
-                        <h2>Voici des morceaux de ma vie</h2>
-
-                        <div class="swiper" data-view="3.5" data-component="Carousel">
-                            <div class="swiper-wrapper container_swiper">
-                                <article class="swiper-slide">
-                                    <img src="assets/images/hereford.jpg" alt="Sommet du mont HereFord" />
-                                    <p>Montée au sommet de HereFord</p>
-                                </article>
-                                <article class="swiper-slide bas">
-                                    <img src="assets/images/camping.jpg" alt="Image de moi en camping" />
-                                    <p>BushCraft & Camping</p>
-                                </article>
-                                <article class="swiper-slide">
-                                    <img src="assets/images/gta.jpg" alt="Image de GTA V modder" />
-                                    <p>Jeu vidéo - GTA V</p>
-                                </article>
-                                <article class="swiper-slide bas">
-                                    <img src="assets/images/car.jpg" alt="Image d'un BMW M3" />
-                                    <p>Car spotting en campagne</p>
-                                </article>
-
-                                <article class="swiper-slide">
-                                    <img src="assets/images/rando.jpg" alt="Image de mes amis en randonée" />
-                                    <p>Excursion hivernale en montagne</p>
-                                </article>
-                            </div>
-                            <div class="swiper-scrollbar"></div>
-                        </div>
-                    </div>
-                </section> -->
-
             <section class="projets" id="projets">
                 <div class="wrapper">
                     <h1>Mes projets</h1>
@@ -335,7 +305,7 @@
                                     <strong>d’intégration Web</strong>
                                     basée sur une maquette réinventer du site de l’hotel Boxotel.
                                 </p>
-                                <a href="boxotel.html" class="button">
+                                <a href="boxotel.html" class="button" data-cursor="view">
                                     <p>Voir le projet</p>
                                     <svg class="icon icon--md">
                                         <use href="#icon-fleche"></use>
@@ -354,7 +324,7 @@
                                     <strong>design UI/UX , intégration Web HTML, CSS et Javascript</strong>
                                     fait pour redonner un nouveau style au site de la ville.
                                 </p>
-                                <a href="boxotel.html" class="button">
+                                <a href="boxotel.html" class="button" data-cursor="view">
                                     <p>Voir le projet</p>
                                     <svg class="icon icon--md">
                                         <use href="#icon-fleche"></use>
@@ -373,7 +343,7 @@
                                     <strong>création 3D</strong>
                                     avec but de créer un tunnel infini rempli de projet étudiant à la chaine.
                                 </p>
-                                <a href="boxotel.html" class="button">
+                                <a href="boxotel.html" class="button" data-cursor="view">
                                     <p>Voir le projet</p>
                                     <svg class="icon icon--md">
                                         <use href="#icon-fleche"></use>
@@ -394,7 +364,7 @@
                                     <strong>Blender</strong>
                                     . Je devais modéliser et animer un robot.
                                 </p>
-                                <a href="boxotel.html" class="button">
+                                <a href="boxotel.html" class="button" data-cursor="view">
                                     <p>Voir le projet</p>
                                     <svg class="icon icon--md">
                                         <use href="#icon-fleche"></use>
@@ -415,7 +385,7 @@
                                     <strong>HMTL, CSS et Javascrip</strong>
                                     t. Je devais réussir à intégrer le site finisalisé dans Wordpress.
                                 </p>
-                                <a href="boxotel.html" class="button">
+                                <a href="boxotel.html" class="button" data-cursor="view">
                                     <p>Voir le projet</p>
                                     <svg class="icon icon--md">
                                         <use href="#icon-fleche"></use>
@@ -475,6 +445,7 @@
                 </div>
             </footer>
         </div>
+    </div>
     </div>
 </body>
 
