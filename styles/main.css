@@ -1430,7 +1430,7 @@ a:hover {
   align-items: center;
 }
 .hub .textes {
-  margin-bottom: 20%;
+  margin-bottom: 15%;
 }
 .hub .titre {
   font-size: 5.63rem;
@@ -1472,6 +1472,9 @@ a:hover {
   .hub a p {
     display: none;
   }
+}
+.hub nav {
+  margin-bottom: 30px;
 }
 
 /* ==========================================================================
@@ -1667,10 +1670,8 @@ a:hover {
     gap: 30px;
   }
 }
-@media (max-width: 900px) {
-  .propos .intro .intro__content h3 {
-    margin-top: 30px;
-  }
+.propos .intro .intro__content h3 {
+  margin-top: 30px;
 }
 
 /*
