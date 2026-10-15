@@ -16,13 +16,31 @@
 
 
 <body>
+    <!-- Écran de chargement -->
+    <div class="loader" data-component="Loader" data-cursor="default" role="status" aria-label="Chargement du portfolio">
+        <div class="loader__inner">
+            <div class="loader__scene" aria-hidden="true">
+                <span class="loader__drop"></span>
+                <span class="loader__ripple"></span>
+            </div>
+            <div class="loader__bar"><span class="loader__fill"></span></div>
+            <div class="loader__info">
+                <p class="loader__name">Olivier Georges</p>
+                <p class="loader__count"><span class="js-loader-count">000</span>%</p>
+            </div>
+        </div>
+    </div>
+
     <div class="cursor" data-component="Cursor"></div>
+
+    <!-- Modale des images agrandies (images avec la classe js-zoom) -->
+    <div data-component="Lightbox"></div>
 
     <div id="smooth-wrapper" data-component="Scroll" data-pin-items="true">
         <div id="smooth-content">
             <div class="slides-wrapper">
                 <div class="animation_section">
-                    <header class="header ">
+                    <header class="header " data-component="Header">
                         <div class="wrapper">
                             <a href="index.html" class="logo"><img src="../assets/images/logo.png" alt=""></a>
                             <nav>
@@ -54,6 +72,11 @@
                                 </ul>
 
                             </nav>
+                            <a href="#" class="button js-toggle header__toggle">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
                         </div>
                     </header>
 
@@ -157,7 +180,7 @@
                                 </div>
                                 <article>
                                     <div class="article__media">
-                                        <img src="assets/images/SS_Selection.png" alt="Image de l'hotel boxotel" />
+                                        <img class="js-zoom" src="assets/images/SS_Selection.png" alt="Image de l'hotel boxotel" />
                                     </div>
                                     <div class="article__content">
                                         <h3>01</h3>
@@ -175,7 +198,7 @@
                                 </article>
                                 <article>
                                     <div class="article__media">
-                                        <img src="assets/images/SS_Hiérarchie_Fichiers.png" alt="Image de l'hotel boxotel" />
+                                        <img class="js-zoom" src="assets/images/SS_Hiérarchie_Fichiers.png" alt="Image de l'hotel boxotel" />
                                     </div>
                                     <div class="article__content">
                                         <h3>02</h3>
@@ -193,7 +216,7 @@
                                 </article>
                                 <article>
                                     <div class="article__media">
-                                        <img src="assets/images/SS_Création_HTML.png" alt="Image de l'hotel boxotel" />
+                                        <img class="js-zoom" src="assets/images/SS_Création_HTML.png" alt="Image de l'hotel boxotel" />
                                     </div>
                                     <div class="article__content">
                                         <h3>03</h3>
@@ -211,7 +234,7 @@
                                 </article>
                                 <article>
                                     <div class="article__media">
-                                        <img src="assets/images/SS_intégration_CSS.png" alt="Image de l'hotel boxotel" />
+                                        <img class="js-zoom" src="assets/images/SS_intégration_CSS.png" alt="Image de l'hotel boxotel" />
                                     </div>
                                     <div class="article__content">
                                         <h3>04</h3>
@@ -229,7 +252,7 @@
                                 </article>
                                 <article>
                                     <div class="article__media">
-                                        <img src="assets/images/SS_Création_Javascipt.png" alt="Image de l'hotel boxotel" />
+                                        <img class="js-zoom" src="assets/images/SS_Création_Javascipt.png" alt="Image de l'hotel boxotel" />
                                     </div>
                                     <div class="article__content">
                                         <h3>05</h3>
@@ -255,16 +278,16 @@
                                     <div class="swiper article__media" data-component="Carousel" data-cursor="drag">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <img src="assets/images/boxotel_01.png" alt="Image de l'hotel boxotel" />
+                                                <img class="js-zoom" src="assets/images/boxotel_01.png" alt="Image de l'hotel boxotel" />
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src="assets/images/boxotel_02.png" alt="Image de l'hotel boxotel" />
+                                                <img class="js-zoom" src="assets/images/boxotel_02.png" alt="Image de l'hotel boxotel" />
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src="assets/images/boxotel_03.png" alt="Image de l'hotel boxotel" />
+                                                <img class="js-zoom" src="assets/images/boxotel_03.png" alt="Image de l'hotel boxotel" />
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src="assets/images/boxotel_04.png" alt="Image de l'hotel boxotel" />
+                                                <img class="js-zoom" src="assets/images/boxotel_04.png" alt="Image de l'hotel boxotel" />
                                             </div>
                                         </div>
                                         <div class="swiper-pagination"></div>

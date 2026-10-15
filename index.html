@@ -16,13 +16,31 @@
 
 
 <body>
+    <!-- Écran de chargement -->
+    <div class="loader" data-component="Loader" data-cursor="default" role="status" aria-label="Chargement du portfolio">
+        <div class="loader__inner">
+            <div class="loader__scene" aria-hidden="true">
+                <span class="loader__drop"></span>
+                <span class="loader__ripple"></span>
+            </div>
+            <div class="loader__bar"><span class="loader__fill"></span></div>
+            <div class="loader__info">
+                <p class="loader__name">Olivier Georges</p>
+                <p class="loader__count"><span class="js-loader-count">000</span>%</p>
+            </div>
+        </div>
+    </div>
+
     <div class="cursor" data-component="Cursor"></div>
+
+    <!-- Modale des images agrandies (images avec la classe js-zoom) -->
+    <div data-component="Lightbox"></div>
 
     <div id="smooth-wrapper" data-component="Scroll" data-pin-items="true">
         <div id="smooth-content">
             <div class="slides-wrapper">
                 <div class="animation_section">
-                    <header class="header header_transparent">
+                    <header class="header header_transparent" data-component="Header">
                         <div class="wrapper">
                             <a href="index.html" class="logo"><img src="../assets/images/logo.png" alt=""></a>
                             <nav>
@@ -54,6 +72,11 @@
                                 </ul>
 
                             </nav>
+                            <a href="#" class="button js-toggle header__toggle">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
                         </div>
                     </header>
 
@@ -302,7 +325,7 @@
                         </div>
                         <article>
                             <div class="article__media">
-                                <img src="assets/images/boxotel.jpg" alt="Image de l'hotel boxotel" />
+                                <img class="js-zoom" src="assets/images/boxotel.jpg" alt="Image de l'hotel boxotel" />
                             </div>
                             <div class="article__content">
                                 <h3>Intégration HTML/CSS</h3>
@@ -321,7 +344,7 @@
                         </article>
                         <article>
                             <div class="article__media">
-                                <img src="assets/images/bsc.jpg" alt="Image du projet Baie-Sainte-Catherine" />
+                                <img class="js-zoom" src="assets/images/bsc.jpg" alt="Image du projet Baie-Sainte-Catherine" />
                             </div>
                             <div class="article__content">
                                 <h3>Designe et intégration</h3>
@@ -340,7 +363,7 @@
                         </article>
                         <article>
                             <div class="article__media">
-                                <img src="assets/images/gif-portal.gif" alt="Animation du projet 3D" />
+                                <img class="js-zoom" src="assets/images/gif-portal.gif" alt="Animation du projet 3D" />
                             </div>
                             <div class="article__content">
                                 <h3>Animation 3D</h3>
@@ -359,7 +382,7 @@
                         </article>
                         <article>
                             <div class="article__media">
-                                <img src="assets/images/robot.jpg" alt="Image du projet de Robot" />
+                                <img class="js-zoom" src="assets/images/robot.jpg" alt="Image du projet de Robot" />
                             </div>
                             <div class="article__content">
                                 <h3>Modélisation et animation 3D</h3>
@@ -380,7 +403,7 @@
                         </article>
                         <article>
                             <div class="article__media">
-                                <img src="assets/images/recette.jpg" alt="Image du site de recette" />
+                                <img class="js-zoom" src="assets/images/recette.jpg" alt="Image du site de recette" />
                             </div>
                             <div class="article__content">
                                 <h3>Intégration HTML/CSS</h3>
