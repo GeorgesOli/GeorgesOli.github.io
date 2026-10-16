@@ -426,6 +426,105 @@
                 </div>
             </section>
 
+            <!-- Modale « Utilisation de l'IA » (ouverte par le lien #ia du footer) -->
+            <div class="modal" id="ia" data-component="Modal">
+                <div class="modal__backdrop js-modal-close"></div>
+                <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="ia-titre">
+                    <button class="modal__close js-modal-close" type="button" aria-label="Fermer la fenêtre">
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="modal__content">
+                        <p class="modal__tag">Transparence</p>
+                        <h2 id="ia-titre">Utilisation de l’IA</h2>
+                        <p>
+                            J’ai conçu et monté ce portfolio moi-même. J’ai utilisé l’IA
+                            <strong>Claude (Anthropic)</strong>
+                            comme assistant de programmation pour aller plus loin sur certains effets interactifs. Voici exactement ce qu’elle a fait.
+                        </p>
+
+                        <h3>Ce que j’ai fait</h3>
+                        <ul>
+                            <li>
+                                <p>Le design du portfolio, la structure HTML, le contenu et les styles SCSS de base.</p>
+                            </li>
+                            <li>
+                                <p>Le choix des effets, des couleurs et de l’ambiance, puis les tests et les ajustements jusqu’au résultat final.</p>
+                            </li>
+                            <li>
+                                <p>L’intégration de chaque composante dans ma structure de projet (Gulp, webpack et composantes JavaScript).</p>
+                            </li>
+                        </ul>
+
+                        <h3>Ce que l’IA a fait</h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong>Effets interactifs :</strong>
+                                    le code du halo lumineux et de la traînée qui suivent la souris à l’accueil, de la galerie de photos circulaire en 3D (Three.js) et du curseur personnalisé.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>Composantes :</strong>
+                                    l’écran de chargement, l’agrandissement des images au clic et cette fenêtre, écrits selon ma façon de coder (classes avec constructor et init).
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>Débogage :</strong>
+                                    l’aide pour régler certains problèmes, comme la ligne dorée des compétences qui n’était pas synchronisée avec les cartes et des erreurs de ScrollSmoother.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>Images :</strong>
+                                    les mises en scène de mes projets à partir de mes propres captures d’écran et le changement de couleur de la miniature de ma vidéo.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>Textes :</strong>
+                                    la correction de l’orthographe des textes du site.
+                                </p>
+                            </li>
+                        </ul>
+
+                        <h3>Crédits</h3>
+                        <ul>
+                            <li>
+                                <p>Design, intégration et contenu : Olivier Georges</p>
+                            </li>
+                            <li>
+                                <p>Photo de profil : Alexandre Donato © 2026</p>
+                            </li>
+                            <li>
+                                <p>Polices : Rubik et Overpass (Google Fonts)</p>
+                            </li>
+                            <li>
+                                <p>Animations et défilement : GSAP (ScrollTrigger et ScrollSmoother)</p>
+                            </li>
+                            <li>
+                                <p>3D dans le navigateur : Three.js</p>
+                            </li>
+                            <li>
+                                <p>Galerie circulaire : inspirée de « Circular Gallery » de React Bits</p>
+                            </li>
+                            <li>
+                                <p>Halo de la souris : inspiré de l’effet « Lightfall »</p>
+                            </li>
+                            <li>
+                                <p>Assistant IA : Claude (Anthropic)</p>
+                            </li>
+                        </ul>
+
+                        <p class="modal__note">
+                            Les projets présentés sont des travaux scolaires réalisés sans but commercial dans le cadre de la technique d’intégration multimédia au Cégep Édouard-Montpetit. Les marques et logos appartiennent à leurs propriétaires respectifs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
             <footer class="footer" id="contacter">
                 <div class="wrapper">
                     <h3>Vous cherchez un stagiaire en développement Web, vous l’avez peut-être trouvé ! Contactez-moi si vous êtes intéressé.</h3>
