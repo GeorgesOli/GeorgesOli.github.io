@@ -1432,6 +1432,11 @@ a:hover {
 .hub .textes {
   margin-bottom: 15%;
 }
+@media (max-height: 768px) {
+  .hub .textes {
+    margin-bottom: 0;
+  }
+}
 .hub .titre {
   font-size: 5.63rem;
   font-weight: 900;
