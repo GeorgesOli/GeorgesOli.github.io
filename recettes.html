@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Les Recettes</title>
 
-    <link rel="icon" type="image/png" href="assets/images/logo.png" />
+    <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg" />
 
     <link rel="stylesheet" href="styles/main.css" />
 
@@ -37,12 +37,12 @@
     <div data-component="Lightbox"></div>
 
     <div id="smooth-wrapper" data-component="Scroll" data-pin-items="true">
-        <div id="smooth-content">
+        <div id="smooth-content" data-component="TextReveal">
             <div class="slides-wrapper">
                 <div class="animation_section">
                     <header class="header " data-component="Header">
                         <div class="wrapper">
-                            <a href="index.html" class="logo"><img src="../assets/images/logo.png" alt="Olivier Georges – retour à l’accueil"></a>
+                            <a href="index.html" class="logo"><img src="../assets/icons/logo.svg" alt="Olivier Georges – retour à l’accueil"></a>
                             <nav>
                                 <ul>
                                     <li>
@@ -103,7 +103,7 @@
                                 </a>
                             </div>
                             <div class="projet__media">
-                                <img src="assets/images/recette.jpg" alt="Le site de recettes présenté sur différents écrans" />
+                                <img src="assets/images/recette.webp" alt="Le site de recettes présenté sur différents écrans" />
                             </div>
                             <hr />
                         </div>
@@ -186,6 +186,7 @@
                         </div>
                     </section>
                     <section class="projets fiche_projets">
+                        <div class="gold-dust" data-component="GoldDust" aria-hidden="true"></div>
                         <div class="wrapper">
                             <h2>Les grandes étapes</h2>
                             <div class="container_projets" data-component="Lines" data-offset="-700">
@@ -196,7 +197,7 @@
                                 </div>
                                 <article>
                                     <div class="article__media">
-                                        <img class="js-zoom" src="assets/images/recette_01.png" alt="Étape 1 : tableau d’inspiration avec des sites de recettes, les typographies et la palette de couleurs" />
+                                        <img class="js-zoom" src="assets/images/recette_01.webp" alt="Étape 1 : tableau d’inspiration avec des sites de recettes, les typographies et la palette de couleurs" />
                                     </div>
                                     <div class="article__content">
                                         <h3>01</h3>
@@ -216,7 +217,7 @@
                                 </article>
                                 <article>
                                     <div class="article__media">
-                                        <img class="js-zoom" src="assets/images/recette_02.png" alt="Étape 2 : maquettes Figma de l’accueil, de la liste des recettes et d’une fiche recette" />
+                                        <img class="js-zoom" src="assets/images/recette_02.webp" alt="Étape 2 : maquettes Figma de l’accueil, de la liste des recettes et d’une fiche recette" />
                                     </div>
                                     <div class="article__content">
                                         <h3>02</h3>
@@ -236,7 +237,7 @@
                                 </article>
                                 <article>
                                     <div class="article__media">
-                                        <img class="js-zoom" src="assets/images/recette_03.png" alt="Étape 3 : intégration HTML de la page d’accueil dans Visual Studio Code" />
+                                        <img class="js-zoom" src="assets/images/recette_03.webp" alt="Étape 3 : intégration HTML de la page d’accueil dans Visual Studio Code" />
                                     </div>
                                     <div class="article__content">
                                         <h3>03</h3>
@@ -256,7 +257,7 @@
                                 </article>
                                 <article>
                                     <div class="article__media">
-                                        <img class="js-zoom" src="assets/images/recette_04.png" alt="Étape 4 : styles SCSS de la page recette dans Visual Studio Code" />
+                                        <img class="js-zoom" src="assets/images/recette_04.webp" alt="Étape 4 : styles SCSS de la page recette dans Visual Studio Code" />
                                     </div>
                                     <div class="article__content">
                                         <h3>04</h3>
@@ -272,7 +273,7 @@
                                 </article>
                                 <article>
                                     <div class="article__media">
-                                        <img class="js-zoom" src="assets/images/recette_05.png" alt="Étape 5 : composante JavaScript du header dans Visual Studio Code" />
+                                        <img class="js-zoom" src="assets/images/recette_05.webp" alt="Étape 5 : composante JavaScript du header dans Visual Studio Code" />
                                     </div>
                                     <div class="article__content">
                                         <h3>05</h3>
@@ -292,19 +293,19 @@
                                     <div class="swiper article__media" data-component="Carousel" data-cursor="drag">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <img class="js-zoom" src="assets/images/recette_final_01.png" alt="Page d’accueil d’Uneatable Recipes avec une grande photo de cuisine et le titre principal" />
+                                                <img class="js-zoom" src="assets/images/recette_final_01.webp" alt="Page d’accueil d’Uneatable Recipes avec une grande photo de cuisine et le titre principal" />
                                             </div>
                                             <div class="swiper-slide">
-                                                <img class="js-zoom" src="assets/images/recette_final_02.png" alt="Page des recettes avec la grille de cartes et leurs étiquettes" />
+                                                <img class="js-zoom" src="assets/images/recette_final_02.webp" alt="Page des recettes avec la grille de cartes et leurs étiquettes" />
                                             </div>
                                             <div class="swiper-slide">
-                                                <img class="js-zoom" src="assets/images/recette_final_03.png" alt="Fiche de la recette « Ramen qui sont pas ramener » avec le temps de cuisson et les portions" />
+                                                <img class="js-zoom" src="assets/images/recette_final_03.webp" alt="Fiche de la recette « Ramen qui sont pas ramener » avec le temps de cuisson et les portions" />
                                             </div>
                                             <div class="swiper-slide">
-                                                <img class="js-zoom" src="assets/images/recette_final_04.png" alt="Section « Les recettes les plus aimées » de la page d’accueil" />
+                                                <img class="js-zoom" src="assets/images/recette_final_04.webp" alt="Section « Les recettes les plus aimées » de la page d’accueil" />
                                             </div>
                                             <div class="swiper-slide">
-                                                <img class="js-zoom" src="assets/images/recette_final_05.png" alt="Fiche de la recette « La soupe de fond de rue » avec ses informations de préparation" />
+                                                <img class="js-zoom" src="assets/images/recette_final_05.webp" alt="Fiche de la recette « La soupe de fond de rue » avec ses informations de préparation" />
                                             </div>
                                         </div>
                                         <div class="swiper-pagination"></div>
@@ -458,6 +459,27 @@
                                     </li>
                                 </ul>
 
+                                <h3>Sur cette page de mon portfolio</h3>
+                                <p>Cette partie concerne seulement la page de présentation que vous lisez, pas le projet lui-même.</p>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            L’IA
+                                            <strong>Claude (Anthropic)</strong>
+                                            m’a aidé à rédiger et à corriger les textes de présentation à partir de mes notes.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Elle a écrit les textes alternatifs (alt) des images pour l’accessibilité.</p>
+                                    </li>
+                                    <li>
+                                        <p>Elle m’a aidé à reformuler la description de mon rôle.</p>
+                                    </li>
+                                    <li>
+                                        <p>Elle a ajusté l’affichage de la page sur mobile, comme les icônes des outils utilisés.</p>
+                                    </li>
+                                </ul>
+
                                 <h3>Crédits</h3>
                                 <ul>
                                     <li>
@@ -514,7 +536,7 @@
                             </nav>
                             <div class="section_bas">
                                 <p>Téléphone : 514-863-8685</p>
-                                <img src="../assets/images/logo.png" alt="Logo d’Olivier Georges">
+                                <img src="../assets/icons/logo.svg" alt="Logo d’Olivier Georges">
                                 <p>Courriel : ogeorges29@hotmail.com</p>
                             </div>
                             <p class="credit">© 2026 Olivier Georges — Portfolio personnel. Tous droits réservés.</p>
