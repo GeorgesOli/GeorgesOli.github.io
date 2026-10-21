@@ -1431,9 +1431,20 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: clamp(20px, 5vh, 70px);
-  padding: 130px 0 30px;
+  padding: 190px 0;
   text-align: center;
+}
+.hub .textes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.hub .nav {
+  position: absolute;
+  right: 0;
+  bottom: clamp(30px, 7vh, 70px);
+  left: 0;
 }
 .hub .titre {
   font-size: clamp(2.5rem, 12vw, 5.63rem);
@@ -1458,7 +1469,7 @@ a:hover {
     font-size: clamp(1rem, 4.5vh, 1.88rem);
   }
   .hub .wrapper {
-    padding-top: 120px;
+    padding: 170px 0;
   }
 }
 .hub .texte {
@@ -1558,6 +1569,17 @@ a:hover {
   position: relative;
   z-index: 2;
   border: none;
+}
+.header .logo img {
+  display: block;
+  width: 100px;
+  height: auto;
+  transition: width 0.3s ease;
+}
+@media (max-width: 900px) {
+  .header .logo img {
+    width: 75px;
+  }
 }
 .header p {
   margin: 5px;
@@ -1935,14 +1957,24 @@ html.nav-is-active {
   z-index: 2;
 }
 .raindrop .droplet {
-  --flare: 0;
-  --drop-alpha: calc(0.3 + var(--flare) * 0.7);
+  --drop-alpha: 1;
   position: absolute;
   top: -10%;
-  clip-path: polygon(50% 0, 100% 100%, 0 100%);
-  border-radius: 100px;
-  background: linear-gradient(0deg, rgba(230, 178, 75, var(--drop-alpha)) 50%, rgba(0, 0, 255, 0) 100%);
-  filter: brightness(calc(1 + var(--flare) * 1.5));
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(230, 178, 75, 0) 0%, rgba(230, 178, 75, calc(var(--drop-alpha) * 0.35)) 55%, rgba(255, 220, 150, var(--drop-alpha)) 100%);
+  pointer-events: none;
+  will-change: transform;
+}
+.raindrop .droplet::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 180%;
+  aspect-ratio: 1/1.3;
+  border-radius: 50% 50% 50% 50%/40% 40% 60% 60%;
+  background: radial-gradient(circle at 50% 40%, rgba(255, 245, 220, var(--drop-alpha)) 0%, rgba(230, 178, 75, var(--drop-alpha)) 60%, rgba(230, 178, 75, 0) 100%);
+  transform: translateX(-50%);
 }
 .raindrop .dot {
   position: absolute;
@@ -1959,15 +1991,6 @@ html.nav-is-active {
   height: var(--halo-size);
   border-radius: 50%;
   background: radial-gradient(circle, rgba(230, 178, 75, 0.25) 0%, rgba(230, 178, 75, 0) 70%);
-  pointer-events: none;
-  mix-blend-mode: screen;
-}
-.raindrop .raindrop__trail {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
   pointer-events: none;
   mix-blend-mode: screen;
 }
@@ -2076,7 +2099,7 @@ html.nav-is-active {
 }
 .fiche_projets .container_projets .swiper img {
   width: 100%;
-  height: 100%;
+  height: calc(100% - 10px);
   -o-object-fit: cover;
      object-fit: cover;
   border: 2px solid var(--color-white);
@@ -2692,5 +2715,22 @@ html.has-cursor [data-cursor=hide] * {
 }
 .modal .modal__close:hover {
   border-color: var(--color-primary);
+}
+
+/* ==========================================================================
+   Page 404 / component
+   Reprend le hub (pluie, textes, liens) avec un gros 404 doré.
+   ========================================================================== */
+.page404 .titre {
+  font-size: clamp(7rem, 30vw, 14rem);
+  color: var(--color-primary);
+  text-shadow: 0 0 60px rgba(230, 178, 75, 0.35);
+}
+.page404 a {
+  border-bottom: 1px solid var(--color-primary);
+  padding: 5px 15px;
+}
+.page404 a p {
+  display: block !important;
 }
 /*# sourceMappingURL=main.css.map */

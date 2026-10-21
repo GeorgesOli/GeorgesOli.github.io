@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les Recettes</title>
+
+    <link rel="icon" type="image/png" href="assets/images/logo.png" />
+
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <!-- <script src="scripts/vendors.js" defer></script> -->
+    <script src="scripts/main.js" defer></script>
+</head>
+
+
+<body>
+    <!-- Écran de chargement -->
+    <div class="loader" data-component="Loader" data-cursor="default" role="status" aria-label="Chargement du portfolio">
+        <div class="loader__inner">
+            <div class="loader__scene" aria-hidden="true">
+                <span class="loader__drop"></span>
+                <span class="loader__ripple"></span>
+            </div>
+            <div class="loader__bar"><span class="loader__fill"></span></div>
+            <div class="loader__info">
+                <p class="loader__name">Olivier Georges</p>
+                <p class="loader__count"><span class="js-loader-count">000</span>%</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cursor" data-component="Cursor"></div>
+
+    <!-- Modale des images agrandies (images avec la classe js-zoom) -->
+    <div data-component="Lightbox"></div>
+
+    <div id="smooth-wrapper" data-component="Scroll" data-pin-items="true">
+        <div id="smooth-content">
+            <div class="slides-wrapper">
+                <div class="animation_section">
+                    <header class="header " data-component="Header">
+                        <div class="wrapper">
+                            <a href="index.html" class="logo"><img src="../assets/images/logo.png" alt="Olivier Georges – retour à l’accueil"></a>
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="index.html#video" class="button">
+                                            <p>Ma vidéo</p>
+                                            <svg class="icon icon--md">
+                                                <use href="#icon-fleche"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#propos" class="button">
+                                            <p>À propos</p>
+                                            <svg class="icon icon--md">
+                                                <use href="#icon-fleche"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#projets" class="button">
+                                            <p>Mes projets</p>
+                                            <svg class="icon icon--md">
+                                                <use href="#icon-fleche"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </nav>
+                            <a href="#" class="button js-toggle header__toggle">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                    </header>
+
+
+                    <section class="presentation_projet">
+                        <div class="wrapper">
+                            <div class="projet__content">
+                                <h2>Intégration HTML/CSS</h2>
+                                <p>
+                                    Ce projet est un projet
+                                    <strong>d’intégration Web</strong>
+                                    en
+                                    <strong>HTML, CSS et JavaScript</strong>
+                                    . Après avoir intégré le site, je devais réussir à le transformer en
+                                    <strong>thème WordPress</strong>
+                                    fonctionnel.
+                                </p>
+                                <p>Intégrateur - Seul - Projet scolaire - 2026</p>
+                                <a href="https://ogeorges.dectim.ca/recettes/" target="_blank" class="button">
+                                    <p>Tester le projet</p>
+                                    <svg class="icon icon--md">
+                                        <use href="#icon-fleche"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="projet__media">
+                                <img src="assets/images/recette.jpg" alt="Le site de recettes présenté sur différents écrans" />
+                            </div>
+                            <hr />
+                        </div>
+                    </section>
+                    <section class="propos_projet">
+                        <div class="wrapper">
+                            <div class="col1">
+                                <h3>À propos du projet</h3>
+                                <p>
+                                    Le projet UneatableRecipes a été réalisé dans le cadre du cours de production Web. Nous devions
+                                    <strong>intégrer</strong>
+                                    une maquette en
+                                    <strong>HTML, CSS et JavaScript</strong>
+                                    , puis l’adapter en
+                                    <strong>thème WordPress</strong>
+                                    pour que le contenu, comme les recettes, puisse être
+                                    <strong>géré</strong>
+                                    facilement à partir du tableau de bord.
+                                </p>
+                            </div>
+                            <div class="col2">
+                                <h3>Les outils utilisés</h3>
+                                <div class="container_outils">
+                                    <svg class="icon icon--lg">
+                                        <use href="#icon-figma"></use>
+                                    </svg>
+                                    <svg class="icon icon--lg">
+                                        <use href="#icon-vscode"></use>
+                                    </svg>
+                                    <svg class="icon icon--lg">
+                                        <use href="#icon-js"></use>
+                                    </svg>
+                                    <svg class="icon icon--lg">
+                                        <use href="#icon-css"></use>
+                                    </svg>
+                                    <svg class="icon icon--lg">
+                                        <use href="#icon-html"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="col3">
+                                <h3>Mon rôle</h3>
+                                <p>
+                                    <strong>Designer et intégrateur Web</strong>
+                                    . J’ai réalisé le projet au complet : la
+                                    <strong>recherche d’inspiration</strong>
+                                    , la création de la
+                                    <strong>maquette Figma</strong>
+                                    , l’intégration en
+                                    <strong>HTML, CSS et JavaScript</strong>
+                                    et la conversion du site en
+                                    <strong>thème WordPress</strong>
+                                    .
+                                </p>
+                            </div>
+                            <div class="col4">
+                                <h3>Ce que l’IA a fait ?</h3>
+                                <p>
+                                    L’IA m’a aidé à
+                                    <strong>corriger</strong>
+                                    et à
+                                    <strong>générer</strong>
+                                    certains textes, à
+                                    <strong>créer</strong>
+                                    des
+                                    <strong>images</strong>
+                                    et à
+                                    <strong>débugger</strong>
+                                    des
+                                    <strong>problèmes.</strong>
+
+                                    <strong>L’intégration</strong>
+                                    et le
+                                    <strong>thème WordPress</strong>
+                                    ont été faits par moi.
+                                </p>
+                            </div>
+                            <hr />
+                        </div>
+                    </section>
+                    <section class="projets fiche_projets">
+                        <div class="wrapper">
+                            <h2>Les grandes étapes</h2>
+                            <div class="container_projets" data-component="Lines" data-offset="-700">
+                                <div class="svg_line">
+                                    <svg class="icon" viewBox="0 0 681 2197" fill="none" preserveAspectRatio="xMidYMax meet">
+                                        <path d="M646.298 0.660156C604.964 47.6602 471.998 130.26 270.798 84.6602C69.5977 39.0602 16.9643 146.66 15.7977 206.16C4.631 277.66 -11.0023 435.16 15.7977 493.16C49.2977 565.66 277.298 617.66 419.798 573.66C562.298 529.66 680.298 624.16 663.298 689.16C646.298 754.16 655.298 923.66 663.298 972.66C671.298 1021.66 621.298 1138.66 351.798 1088.16C82.2976 1037.66 25.2977 1120.16 15.7977 1177.16C6.29761 1234.16 9.29761 1435.16 23.7976 1463.66C38.2976 1492.16 36.2976 1602.66 375.298 1525.16C568.298 1520.66 708.298 1564.66 674.798 1664.66C641.298 1764.66 646.298 1892.66 665.298 1949.66C698.298 2003.66 566.798 2077.66 563.798 2149.16C561.398 2206.36 562.798 2198.33 563.798 2187.16" stroke="#F4F1EA" stroke-width="2" />
+                                    </svg>
+                                </div>
+                                <article>
+                                    <div class="article__media">
+                                        <img class="js-zoom" src="assets/images/recette_01.png" alt="Étape 1 : tableau d’inspiration avec des sites de recettes, les typographies et la palette de couleurs" />
+                                    </div>
+                                    <div class="article__content">
+                                        <h3>01</h3>
+                                        <h3>Recherche d’inspiration</h3>
+                                        <p>
+                                            Premièrement, j’ai cherché de l’
+                                            <strong>inspiration</strong>
+                                            sur d’autres sites de recettes pour définir le
+                                            <strong>style</strong>
+                                            , les
+                                            <strong>couleurs</strong>
+                                            et l’
+                                            <strong>ambiance</strong>
+                                            que je voulais donner au projet.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="article__media">
+                                        <img class="js-zoom" src="assets/images/recette_02.png" alt="Étape 2 : maquettes Figma de l’accueil, de la liste des recettes et d’une fiche recette" />
+                                    </div>
+                                    <div class="article__content">
+                                        <h3>02</h3>
+                                        <h3>Maquette Figma</h3>
+                                        <p>
+                                            Deuxièmement, j’ai conçu la
+                                            <strong>maquette</strong>
+                                            du site dans
+                                            <strong>Figma</strong>
+                                            : la mise en page, les
+                                            <strong>typographies</strong>
+                                            , les couleurs et les
+                                            <strong>composantes</strong>
+                                            de chaque page.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="article__media">
+                                        <img class="js-zoom" src="assets/images/recette_03.png" alt="Étape 3 : intégration HTML de la page d’accueil dans Visual Studio Code" />
+                                    </div>
+                                    <div class="article__content">
+                                        <h3>03</h3>
+                                        <h3>Intégration HTML et CSS</h3>
+                                        <p>
+                                            Troisièmement, l’intégration de la maquette en
+                                            <strong>HTML</strong>
+                                            , puis l’ajout du
+                                            <strong>CSS</strong>
+                                            et du
+                                            <strong>responsive</strong>
+                                            pour donner vie au site sur
+                                            <strong>tous les écrans</strong>
+                                            .
+                                        </p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="article__media">
+                                        <img class="js-zoom" src="assets/images/recette_04.png" alt="Étape 4 : styles SCSS de la page recette dans Visual Studio Code" />
+                                    </div>
+                                    <div class="article__content">
+                                        <h3>04</h3>
+                                        <h3>Interactivité</h3>
+                                        <p>
+                                            Quatrièmement, l’ajout du
+                                            <strong>JavaScript</strong>
+                                            pour rendre le site
+                                            <strong>interactif</strong>
+                                            : [menu, filtres, animations, etc.].
+                                        </p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="article__media">
+                                        <img class="js-zoom" src="assets/images/recette_05.png" alt="Étape 5 : composante JavaScript du header dans Visual Studio Code" />
+                                    </div>
+                                    <div class="article__content">
+                                        <h3>05</h3>
+                                        <h3>WordPress</h3>
+                                        <p>
+                                            Dernièrement, la conversion du site en
+                                            <strong>thème WordPress</strong>
+                                            , pour que les
+                                            <strong>recettes</strong>
+                                            puissent être ajoutées et modifiées directement à partir du
+                                            <strong>tableau de bord</strong>
+                                            .
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="final">
+                                    <div class="swiper article__media" data-component="Carousel" data-cursor="drag">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img class="js-zoom" src="assets/images/recette_final_01.png" alt="Page d’accueil d’Uneatable Recipes avec une grande photo de cuisine et le titre principal" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="js-zoom" src="assets/images/recette_final_02.png" alt="Page des recettes avec la grille de cartes et leurs étiquettes" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="js-zoom" src="assets/images/recette_final_03.png" alt="Fiche de la recette « Ramen qui sont pas ramener » avec le temps de cuisson et les portions" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="js-zoom" src="assets/images/recette_final_04.png" alt="Section « Les recettes les plus aimées » de la page d’accueil" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="js-zoom" src="assets/images/recette_final_05.png" alt="Fiche de la recette « La soupe de fond de rue » avec ses informations de préparation" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    <div class="article__content">
+                                        <h3>06</h3>
+                                        <h3>Résultat final</h3>
+                                        <a href="https://ogeorges.dectim.ca/recettes/" target="_blank" class="button">
+                                            <p>Tester le projet</p>
+                                            <svg class="icon icon--md">
+                                                <use href="#icon-fleche"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <hr />
+                        </div>
+                    </section>
+                    <section class="defi_conclu propos_projet">
+                        <div class="wrapper">
+                            <div class="col1">
+                                <h3>Les défis</h3>
+                                <ol>
+                                    <li>Trouver un style unique parmi tous les sites de recettes existants</li>
+                                    <li>Garder le même design entre la maquette Figma, l’intégration et WordPress</li>
+                                    <li>Rendre les recettes faciles à ajouter et à modifier dans WordPress</li>
+                                </ol>
+                            </div>
+                            <div class="col2">
+                                <h3>Mes solutions</h3>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            Rassembler plusieurs
+                                            <strong>inspirations</strong>
+                                            et en garder seulement les meilleures idées pour créer une
+                                            <strong>identité</strong>
+                                            propre au projet.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Bien définir les
+                                            <strong>couleurs</strong>
+                                            , les
+                                            <strong>typographies</strong>
+                                            et les
+                                            <strong>composantes</strong>
+                                            dans Figma, puis réutiliser le même
+                                            <strong>CSS</strong>
+                                            à chaque étape.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Découper le site en
+                                            <strong>gabarits</strong>
+                                            WordPress et structurer chaque recette pour qu’elle se
+                                            <strong>gère</strong>
+                                            directement à partir du
+                                            <strong>tableau de bord</strong>
+                                            .
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr />
+                            <div class="col3">
+                                <h3>En conclusion</h3>
+                                <p>
+                                    En conclusion, ce projet m’a permis de réaliser un site complet, de la
+                                    <strong>recherche d’inspiration</strong>
+                                    et de la
+                                    <strong>maquette Figma</strong>
+                                    jusqu’à l’
+                                    <strong>intégration</strong>
+                                    en
+                                    <strong>HTML, CSS et JavaScript</strong>
+                                    . La conversion en
+                                    <strong>thème WordPress</strong>
+                                    m’a appris à passer d’un site statique à un site
+                                    <strong>dynamique</strong>
+                                    , facile à
+                                    <strong>mettre à jour</strong>
+                                    pour quelqu’un qui ne code pas. Ce projet représente donc un bon
+                                    <strong>récapitulatif</strong>
+                                    de mes
+                                    <strong>compétences</strong>
+                                    en
+                                    <strong>design</strong>
+                                    et en
+                                    <strong>intégration Web</strong>
+                                    .
+                                </p>
+                                <a href="index.html#projets" class="button">
+                                    <p>Retourner aux projets</p>
+                                    <svg class="icon icon--md">
+                                        <use href="#icon-fleche"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Modale « Utilisation de l'IA » (ouverte par le lien #ia du footer) -->
+                    <div class="modal" id="ia" data-component="Modal">
+                        <div class="modal__backdrop js-modal-close"></div>
+                        <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="ia-titre">
+                            <button class="modal__close js-modal-close" type="button" aria-label="Fermer la fenêtre">
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <div class="modal__content">
+                                <p class="modal__tag">Projet Site de recettes</p>
+                                <h2 id="ia-titre">Utilisation de l’IA</h2>
+                                <p>
+                                    Dans ce projet, l’IA a été utilisée comme
+                                    <strong>outil d’assistance</strong>
+                                    .
+                                </p>
+
+                                <h3>Ce que l’IA a fait</h3>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            <strong>Corriger</strong>
+                                            et
+                                            <strong>générer</strong>
+                                            certains textes du site.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <strong>Créer</strong>
+                                            des images utilisées dans le site.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            M’aider à
+                                            <strong>débugger</strong>
+                                            des problèmes que je n’arrivais pas à régler.
+                                        </p>
+                                    </li>
+                                </ul>
+
+                                <h3>Ce que l’IA n’a pas fait</h3>
+                                <ul>
+                                    <li>
+                                        <p>La maquette Figma, l’intégration HTML, CSS et JavaScript et le thème WordPress ont entièrement été faits par moi.</p>
+                                    </li>
+                                </ul>
+
+                                <h3>Crédits</h3>
+                                <ul>
+                                    <li>
+                                        <p>Design, intégration et thème WordPress : Olivier Georges</p>
+                                    </li>
+                                    <li>
+                                        <p>Certaines images et certains textes : générés avec l’IA</p>
+                                    </li>
+                                </ul>
+
+                                <p class="modal__note">Projet scolaire réalisé en 2026, sans but commercial.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="footer" id="contacter">
+                        <div class="wrapper">
+                            <h3>Vous cherchez un stagiaire en développement Web, vous l’avez peut-être trouvé ! Contactez-moi si vous êtes intéressé.</h3>
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="index.html#hub" class="button">
+                                            <p>HUB</p>
+                                            <svg class="icon icon--md">
+                                                <use href="#icon-fleche"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#video" class="button">
+                                            <p>Ma vidéo</p>
+                                            <svg class="icon icon--md">
+                                                <use href="#icon-fleche"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#propos" class="button">
+                                            <p>À propos</p>
+                                            <svg class="icon icon--md">
+                                                <use href="#icon-fleche"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#ia" class="button">
+                                            <p>Utilisation de l'IA</p>
+                                            <svg class="icon icon--md">
+                                                <use href="#icon-fleche"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="section_bas">
+                                <p>Téléphone : 514-863-8685</p>
+                                <img src="../assets/images/logo.png" alt="Logo d’Olivier Georges">
+                                <p>Courriel : ogeorges29@hotmail.com</p>
+                            </div>
+                            <p class="credit">© 2026 Olivier Georges — Portfolio personnel. Tous droits réservés.</p>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

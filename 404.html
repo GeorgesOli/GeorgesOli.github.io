@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page introuvable</title>
+
+    <link rel="icon" type="image/png" href="assets/images/logo.png" />
+
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <!-- <script src="scripts/vendors.js" defer></script> -->
+    <script src="scripts/main.js" defer></script>
+</head>
+
+
+<body>
+    <!-- Écran de chargement -->
+    <div class="loader" data-component="Loader" data-cursor="default" role="status" aria-label="Chargement du portfolio">
+        <div class="loader__inner">
+            <div class="loader__scene" aria-hidden="true">
+                <span class="loader__drop"></span>
+                <span class="loader__ripple"></span>
+            </div>
+            <div class="loader__bar"><span class="loader__fill"></span></div>
+            <div class="loader__info">
+                <p class="loader__name">Olivier Georges</p>
+                <p class="loader__count"><span class="js-loader-count">000</span>%</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cursor" data-component="Cursor"></div>
+
+    <!-- Modale des images agrandies (images avec la classe js-zoom) -->
+    <div data-component="Lightbox"></div>
+
+    <div id="smooth-wrapper" data-component="Scroll" data-pin-items="true">
+        <div id="smooth-content">
+            <div class="slides-wrapper">
+                <div class="animation_section">
+                    <header class="header header_transparent" data-component="Header">
+                        <div class="wrapper">
+                            <a href="index.html" class="logo"><img src="../assets/images/logo.png" alt="Olivier Georges – retour à l’accueil"></a>
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="index.html#video" class="button">
+                                            <p>Ma vidéo</p>
+                                            <svg class="icon icon--md">
+                                                <use href="#icon-fleche"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#propos" class="button">
+                                            <p>À propos</p>
+                                            <svg class="icon icon--md">
+                                                <use href="#icon-fleche"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#projets" class="button">
+                                            <p>Mes projets</p>
+                                            <svg class="icon icon--md">
+                                                <use href="#icon-fleche"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </nav>
+                            <a href="#" class="button js-toggle header__toggle">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                    </header>
+
+
+                    <section class="hub page404">
+                        <div class="raindrop" data-component="Raindrop">
+                            <div class="wrapper">
+                                <div class="textes">
+                                    <p class="titre">404</p>
+                                    <p class="titre_petit"><em>Oups, cette page s’est perdue sous la pluie</em></p>
+                                    <p class="texte">
+                                        La page que vous cherchez n’existe pas ou a été déplacée. Revenez à l’accueil pour continuer la visite.
+                                    </p>
+                                </div>
+
+                                <nav class="nav">
+                                    <ul>
+                                        <li>
+                                            <a href="index.html" class="button">
+                                                <p>Retour à l’accueil</p>
+                                                <svg class="icon icon--md">
+                                                    <use href="#icon-fleche"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html#projets" class="button">
+                                                <p>Mes projets</p>
+                                                <svg class="icon icon--md">
+                                                    <use href="#icon-fleche"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <footer class="footer" id="contacter">
+                <div class="wrapper">
+                    <h3>Vous cherchez un stagiaire en développement Web, vous l’avez peut-être trouvé ! Contactez-moi si vous êtes intéressé.</h3>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="index.html#hub" class="button">
+                                    <p>HUB</p>
+                                    <svg class="icon icon--md">
+                                        <use href="#icon-fleche"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#video" class="button">
+                                    <p>Ma vidéo</p>
+                                    <svg class="icon icon--md">
+                                        <use href="#icon-fleche"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#propos" class="button">
+                                    <p>À propos</p>
+                                    <svg class="icon icon--md">
+                                        <use href="#icon-fleche"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#ia" class="button">
+                                    <p>Utilisation de l'IA</p>
+                                    <svg class="icon icon--md">
+                                        <use href="#icon-fleche"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="section_bas">
+                        <p>Téléphone : 514-863-8685</p>
+                        <img src="../assets/images/logo.png" alt="Logo d’Olivier Georges">
+                        <p>Courriel : ogeorges29@hotmail.com</p>
+                    </div>
+                    <p class="credit">© 2026 Olivier Georges — Portfolio personnel. Tous droits réservés.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
