@@ -36,49 +36,51 @@
     <!-- Modale des images agrandies (images avec la classe js-zoom) -->
     <div data-component="Lightbox"></div>
 
+    <!-- Header fixe : en dehors du smooth-wrapper pour rester collé en haut de l'écran -->
+    <header class="header " data-component="Header">
+        <div class="wrapper">
+            <a href="index.html" class="logo"><img src="../assets/icons/logo.svg" alt="Olivier Georges – retour à l’accueil"></a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html#video" class="button">
+                            <p>Ma vidéo</p>
+                            <svg class="icon icon--md">
+                                <use href="#icon-fleche"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#propos" class="button">
+                            <p>À propos</p>
+                            <svg class="icon icon--md">
+                                <use href="#icon-fleche"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#projets" class="button">
+                            <p>Mes projets</p>
+                            <svg class="icon icon--md">
+                                <use href="#icon-fleche"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+            <a href="#" class="button js-toggle header__toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </header>
+
     <div id="smooth-wrapper" data-component="Scroll" data-pin-items="true">
         <div id="smooth-content" data-component="TextReveal">
             <div class="slides-wrapper">
                 <div class="animation_section">
-                    <header class="header " data-component="Header">
-                        <div class="wrapper">
-                            <a href="index.html" class="logo"><img src="../assets/icons/logo.svg" alt="Olivier Georges – retour à l’accueil"></a>
-                            <nav>
-                                <ul>
-                                    <li>
-                                        <a href="index.html#video" class="button">
-                                            <p>Ma vidéo</p>
-                                            <svg class="icon icon--md">
-                                                <use href="#icon-fleche"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html#propos" class="button">
-                                            <p>À propos</p>
-                                            <svg class="icon icon--md">
-                                                <use href="#icon-fleche"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html#projets" class="button">
-                                            <p>Mes projets</p>
-                                            <svg class="icon icon--md">
-                                                <use href="#icon-fleche"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </nav>
-                            <a href="#" class="button js-toggle header__toggle">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </a>
-                        </div>
-                    </header>
 
 
                     <section class="presentation_projet">
@@ -103,7 +105,7 @@
                                 </a>
                             </div>
                             <div class="projet__media">
-                                <img src="assets/images/recette.webp" alt="Le site de recettes présenté sur différents écrans" />
+                                <img class="mockup mockup--phone" src="assets/images/recette.webp" alt="Le site de recettes affiché sur un téléphone" />
                             </div>
                             <hr />
                         </div>

@@ -36,49 +36,51 @@
     <!-- Modale des images agrandies (images avec la classe js-zoom) -->
     <div data-component="Lightbox"></div>
 
+    <!-- Header fixe : en dehors du smooth-wrapper pour rester collé en haut de l'écran -->
+    <header class="header header_transparent" data-component="Header">
+        <div class="wrapper">
+            <a href="index.html" class="logo"><img src="../assets/icons/logo.svg" alt="Olivier Georges – retour à l’accueil"></a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html#video" class="button">
+                            <p>Ma vidéo</p>
+                            <svg class="icon icon--md">
+                                <use href="#icon-fleche"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#propos" class="button">
+                            <p>À propos</p>
+                            <svg class="icon icon--md">
+                                <use href="#icon-fleche"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#projets" class="button">
+                            <p>Mes projets</p>
+                            <svg class="icon icon--md">
+                                <use href="#icon-fleche"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+            <a href="#" class="button js-toggle header__toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </header>
+
     <div id="smooth-wrapper" data-component="Scroll" data-pin-items="true">
         <div id="smooth-content" data-component="TextReveal">
             <div class="slides-wrapper">
                 <div class="animation_section">
-                    <header class="header header_transparent" data-component="Header">
-                        <div class="wrapper">
-                            <a href="index.html" class="logo"><img src="../assets/icons/logo.svg" alt="Olivier Georges – retour à l’accueil"></a>
-                            <nav>
-                                <ul>
-                                    <li>
-                                        <a href="index.html#video" class="button">
-                                            <p>Ma vidéo</p>
-                                            <svg class="icon icon--md">
-                                                <use href="#icon-fleche"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html#propos" class="button">
-                                            <p>À propos</p>
-                                            <svg class="icon icon--md">
-                                                <use href="#icon-fleche"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html#projets" class="button">
-                                            <p>Mes projets</p>
-                                            <svg class="icon icon--md">
-                                                <use href="#icon-fleche"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </nav>
-                            <a href="#" class="button js-toggle header__toggle">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </a>
-                        </div>
-                    </header>
 
 
 
@@ -291,7 +293,7 @@
                     <h2>Voici des morceaux de ma vie</h2>
                 </div>
 
-                <div class="circular-gallery" data-cursor="drag" data-component="CircularGallery" data-bend="3" data-border-radius="0.05" tabindex="0" role="region" aria-label="Galerie de photos. Glissez ou utilisez les flèches gauche et droite.">
+                <div class="circular-gallery" data-cursor="drag" data-component="CircularGallery" data-bend="3" data-border-radius="0.05" tabindex="0" data-center-scale="0.2" role="region" aria-label="Galerie de photos. Glissez ou utilisez les flèches gauche et droite.">
                     <div class="circular-gallery__items">
                         <article>
                             <img decoding="async" src="assets/images/hereford.webp" alt="Vue depuis le sommet du mont Hereford" />
@@ -329,7 +331,7 @@
                         </div>
                         <article>
                             <div class="article__media">
-                                <img decoding="async" class="js-zoom" src="assets/images/boxotel.webp" alt="Le site Boxotel présenté sur différents écrans" />
+                                <img decoding="async" class="js-zoom mockup" src="assets/images/boxotel.webp" alt="Le site Boxotel affiché sur une tablette" />
                             </div>
                             <div class="article__content">
                                 <h3>Intégration HTML/CSS</h3>
@@ -348,7 +350,7 @@
                         </article>
                         <article>
                             <div class="article__media">
-                                <img decoding="async" class="js-zoom" src="assets/images/bsc.webp" alt="La refonte du site de Baie-Sainte-Catherine présentée sur différents écrans" />
+                                <img decoding="async" class="js-zoom mockup" src="assets/images/bsc.webp" alt="La refonte du site de Baie-Sainte-Catherine affichée sur une tablette" />
                             </div>
                             <div class="article__content">
                                 <h3>Design et intégration</h3>
@@ -407,7 +409,7 @@
                         </article>
                         <article>
                             <div class="article__media">
-                                <img decoding="async" class="js-zoom" src="assets/images/recette.webp" alt="Le site de recettes présenté sur différents écrans" />
+                                <img decoding="async" class="js-zoom mockup mockup--phone" src="assets/images/recette.webp" alt="Le site de recettes affiché sur un téléphone" />
                             </div>
                             <div class="article__content">
                                 <h3>Intégration HTML/CSS</h3>
